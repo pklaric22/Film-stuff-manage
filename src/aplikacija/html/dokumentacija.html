@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacija</title>
+    <link href="/css/pklaric22_dokumentacija.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>Dokumentacija</h1>
+    </header>
+    <nav>#navigacija#</nav>
+    <section id="autor">
+        <h2>O autoru</h2>
+        <img src="/dokumentacija/autor.jpg" alt="Autor" class="autor-slika">
+        <p>Ime: Patrik </p>
+        <p>Prezime: Klarić</p>
+        <p>Email: <a href="mailto:pklaric22@studnent.foi.hr">pklaric22@student.foi.hr</a></p>
+    </section>
+
+    <section id="era-model">
+        <h2>ERA Modeli</h2>
+        <div class="era-slika">
+            <a href="/dokumentacija/era1.jpg" target="_blank">
+                <img src="/dokumentacija/era1.jpg" alt="ERA Model Baza 1">
+            </a>
+            <a href="/dokumentacija/era2.jpg" target="_blank">
+                <img src="/dokumentacija/era2.jpg" alt="ERA Model Baza 2">
+            </a>
+        </div>
+    </section>
+
+    <section id="tablice">
+        <h2>Pregled Implementacije</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Resurs</th>
+                    <th>GET čitanje</th>
+                    <th>POST kreiranje</th>
+                    <th>PUT ažuriranje</th>
+                    <th>DELETE brisanje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>servis/korisnici</td>
+                    <td></td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>servis/korisnici/{korime}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>servis/osoba?stranica=broj</td>
+                    <td>Napravljen</td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>servis/osoba/{id}</td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td></td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>servis/osoba/{id}/film?stranica=broj</td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td>Napravljen</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>servis/film?stranica=broj&datumOd=timestamp&datumDo=timestamp</td>
+                    <td>Napravljen</td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>servis/film/{id}</td>
+                    <td>Napravljen</td>
+                    <td></td>
+                    <td></td>
+                    <td>Napravljen</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Funkcionalnosti Web Aplikacije</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Uloga</th>
+                    <th>Stranica/e</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gost</td>
+                    <td>Početna</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>Gost</td>
+                    <td>Dokumentacija</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>Gost</td>
+                    <td>Prijava, Odjava</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>Gost</td>
+                    <td>Registracija</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>Korisnik</td>
+                    <td>Početna</td>
+                    <td>Napravljen</td>
+                </tr>
+                <tr>
+                    <td>Korisnik</td>
+                    <td>Osobe</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Korisnik</td>
+                    <td>Detalji</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Admin</td>
+                    <td>Korisnici</td>
+                    <td>Polovično - REST komunikacija ne radi</td>
+                </tr>
+                <tr>
+                    <td>Admin</td>
+                    <td>Dodavanje</td>
+                    <td>Polovično-Implementirao sam klijent za dohvat podataka sa tmdb</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="dodatne-informacije">
+        <h2>Dodatne informacije</h2>
+        <p>Sljedeći dijelovi nisu napravljeni:</p>
+        <ul>
+            <li>Nisam uspio kreirati u potpunosti dodavanje osoba i filmova za Admina. Povezao sam se na tmdb servis i uspio sam dohvatiti osobe, ali zbog manjka vremena nisam stigao popraviti</li>
+            <li>Samim tim nisam uspio napraviti ni prikaz Osoba za korisnike niti detalje o tim osobama</li>
+            <li>Nisam napravio u potpunosti slanje i odobravanje zahtjeva za autentifikaciju od strane admina. Isto sam bio na dobrom putu, ali sam prekasno shvatio logiku implementacije i više nisam imao vremena u potpunosti impplementirati</li>
+        </ul>
+        <p>Podaci za prijavu</p>
+        <ul>
+            <li>Kao što je bilo navedeno u zadaći pod sekcijom "Baza podataka"</li>
+            <li>Prvi korisnik: <br>
+                    korime: obican <br>
+                    lozinka: rwa
+        </li>
+        <li>Drugi korisnik: <br>
+            korime: admin <br>
+            lozinka: rwa
+</li>
+
+        </ul>
+        <p>Dijelovi koji se žele istaknuti:</p>
+        <ul>
+            <li>Htio bih istaknuti dio za testiranje Tablice 2. Ne znam na koji način provodite testiranje ovog dijela, ali uz moji svaki zahtjev u zaglavlju curl naredbe treba biti JWT kljuc</li>
+            <li>Ja sam testirao pomoću curl narebi, a ključ za testiranje generiram na početku testiranja sa slijedećom curl naredbom: </li>
+            <li>curl -X POST http://localhost:12222/servis/prijava \  <br>
+                -H "Content-Type: application/json" \ <br>
+                -d '{ <br>
+                  "korisnickoIme": "admin"     <br>
+                }' <br>
+                </li>
+            <li>Ona vrati token koji se može koristiti koliko je zadano u konfiguracijskoj datoteci: <br> 
+                {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...."}%   
+            </li>
+            <li>Zatim se normalno mogu koristiti curl naredbe sa tokenom u zaglavlju</li>
+            <li>curl -X POST http://localhost:12223/servis/korisnici \ <br>
+                -H "Content-Type: application/json" \ <br>
+                -H "Authorization: Bearer GeneriraniToken" \  <br>
+                -d '{  <br>
+                  "korisnickoIme": "ma12rincilic",  <br>
+                }'  <br>
+                </li>
+        </ul>
+    </section>
+</body>
+</html>

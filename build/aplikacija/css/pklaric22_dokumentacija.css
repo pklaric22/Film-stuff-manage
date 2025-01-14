@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #005f73;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#autor img.autor-slika {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#autor p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.era-slika {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.era-slika img {
+    max-width: 200px;
+    margin: 10px;
+    border: 2px solid #0077b6;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.era-slika img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #333;
+}
+
+ul li:nth-child(2n) {
+    color: #0077b6;
+}
+
+
+#dodatne-informacije ul li {
+    font-weight: bold;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
